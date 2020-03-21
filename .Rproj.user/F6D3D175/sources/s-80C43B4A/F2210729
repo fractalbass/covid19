@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1584805419459.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "96323072",
+    "id" : "F2210729",
+    "lastKnownWriteTime" : 1584805937,
+    "last_content_update" : 1584805937141,
+    "path" : "~/projects/covid19/coronavirus_analysis.Rmd",
+    "project_path" : "coronavirus_analysis.Rmd",
+    "properties" : {
+        "chunk_output_type" : "inline",
+        "cursorPosition" : "7,24",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
