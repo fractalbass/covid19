@@ -5,11 +5,13 @@ date: March 20, 2020
 output: html_notebook
 ---
 
+*Updated March 21, 2020*
+
 # Introduction
 
-I have been asked by several co-workers and others if I have looked at the data for the COVID-19.  This document is an attempt to look at the data at a fairly high level.
+I have been asked by several co-workers and others if I have looked at the data for COVID-19.  This document is an attempt to look at that data at a fairly high level.
 
-The data for this writeup was obtained from the kaggle challenge site:  https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+The data for this writeup was obtained from the Kaggle challenge site:  https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
 
 The data on the kaggle challenge is update almost daily.  The here was last updated at 3:00am (GMT-5) March 20, 2019
 

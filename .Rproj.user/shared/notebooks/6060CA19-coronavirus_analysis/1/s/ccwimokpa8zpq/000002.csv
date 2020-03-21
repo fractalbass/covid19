@@ -1,5 +1,0 @@
-"0","rm(list=ls())"
-"0","library(ggplot2)"
-"0","df_confirmed <- read.csv('time_series_covid_19_confirmed.csv')"
-"0","df_deaths <- read.csv('time_series_covid_19_deaths.csv')"
-"0","df_recovered <- read.csv('time_series_covid_19_recovered.csv')"
