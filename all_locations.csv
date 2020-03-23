@@ -1,0 +1,376 @@
+"sequence","location","count","delta","logscale"
+1,"US - Minnesota",3,0,0
+2,"US - Minnesota",5,2,0.693147180559945
+3,"US - Minnesota",9,4,1.38629436111989
+4,"US - Minnesota",14,5,1.6094379124341
+5,"US - Minnesota",21,7,1.94591014905531
+6,"US - Minnesota",35,14,2.63905732961526
+7,"US - Minnesota",54,19,2.94443897916644
+8,"US - Minnesota",60,6,1.79175946922805
+9,"US - Minnesota",77,17,2.83321334405622
+10,"US - Minnesota",89,12,2.484906649788
+11,"US - Minnesota",115,26,3.25809653802148
+1,"Iran - Iran",2,0,0
+2,"Iran - Iran",5,3,1.09861228866811
+3,"Iran - Iran",18,13,2.56494935746154
+4,"Iran - Iran",28,10,2.30258509299405
+5,"Iran - Iran",43,15,2.70805020110221
+6,"Iran - Iran",61,18,2.89037175789616
+7,"Iran - Iran",95,34,3.52636052461616
+8,"Iran - Iran",139,44,3.78418963391826
+9,"Iran - Iran",245,106,4.66343909411207
+10,"Iran - Iran",388,143,4.96284463025991
+11,"Iran - Iran",593,205,5.32300997913841
+12,"Iran - Iran",978,385,5.95324333428778
+13,"Iran - Iran",1501,523,6.25958146406492
+14,"Iran - Iran",2336,835,6.72743172485086
+15,"Iran - Iran",2922,586,6.37331978957701
+16,"Iran - Iran",3513,591,6.3818160174061
+17,"Iran - Iran",4747,1234,7.11801620446533
+18,"Iran - Iran",5823,1076,6.98100574072173
+19,"Iran - Iran",6566,743,6.61069604471776
+20,"Iran - Iran",7161,595,6.38856140554563
+21,"Iran - Iran",8042,881,6.78105762593618
+22,"Iran - Iran",9000,958,6.86484777797086
+23,"Iran - Iran",10075,1075,6.98007594056176
+24,"Iran - Iran",11364,1289,7.16162200293919
+25,"Iran - Iran",12729,1365,7.21890970761906
+26,"Iran - Iran",13938,1209,7.09754885061479
+27,"Iran - Iran",14991,1053,6.95939851213398
+28,"Iran - Iran",16169,1178,7.07157336421153
+29,"Iran - Iran",17361,1192,7.0833878476253
+30,"Iran - Iran",18407,1046,6.95272864462487
+31,"Iran - Iran",19644,1237,7.12044437239249
+1,"Italy - Italy",2,0,0
+2,"Italy - Italy",2,0,0
+3,"Italy - Italy",2,0,0
+4,"Italy - Italy",2,0,0
+5,"Italy - Italy",2,0,0
+6,"Italy - Italy",2,0,0
+7,"Italy - Italy",2,0,0
+8,"Italy - Italy",3,1,0
+9,"Italy - Italy",3,0,0
+10,"Italy - Italy",3,0,0
+11,"Italy - Italy",3,0,0
+12,"Italy - Italy",3,0,0
+13,"Italy - Italy",3,0,0
+14,"Italy - Italy",3,0,0
+15,"Italy - Italy",3,0,0
+16,"Italy - Italy",3,0,0
+17,"Italy - Italy",3,0,0
+18,"Italy - Italy",3,0,0
+19,"Italy - Italy",3,0,0
+20,"Italy - Italy",3,0,0
+21,"Italy - Italy",3,0,0
+22,"Italy - Italy",20,17,2.83321334405622
+23,"Italy - Italy",62,42,3.73766961828337
+24,"Italy - Italy",155,93,4.53259949315326
+25,"Italy - Italy",229,74,4.30406509320417
+26,"Italy - Italy",322,93,4.53259949315326
+27,"Italy - Italy",453,131,4.87519732320115
+28,"Italy - Italy",655,202,5.30826769740121
+29,"Italy - Italy",888,233,5.4510384535657
+30,"Italy - Italy",1128,240,5.48063892334199
+31,"Italy - Italy",1694,566,6.33859407820318
+32,"Italy - Italy",2036,342,5.8348107370626
+33,"Italy - Italy",2502,466,6.14418563412565
+34,"Italy - Italy",3089,587,6.3750248198281
+35,"Italy - Italy",3858,769,6.64509096950564
+36,"Italy - Italy",4636,778,6.65672652417839
+37,"Italy - Italy",5883,1247,7.12849594568004
+38,"Italy - Italy",7375,1492,7.30787278076371
+39,"Italy - Italy",9172,1797,7.49387388678356
+40,"Italy - Italy",10149,977,6.88448665204278
+41,"Italy - Italy",12462,2313,7.74630066223144
+42,"Italy - Italy",12462,0,0
+43,"Italy - Italy",17660,5198,8.55602921520144
+44,"Italy - Italy",21157,3497,8.15966073706338
+45,"Italy - Italy",24747,3590,8.18590748148232
+46,"Italy - Italy",27980,3233,8.08116577772543
+47,"Italy - Italy",31506,3526,8.16791936295782
+48,"Italy - Italy",35713,4207,8.34450508359052
+49,"Italy - Italy",41035,5322,8.57960445153763
+50,"Italy - Italy",47021,5986,8.69717868841264
+1,"France - France",2,0,0
+2,"France - France",3,1,0
+3,"France - France",3,0,0
+4,"France - France",3,0,0
+5,"France - France",4,1,0
+6,"France - France",5,1,0
+7,"France - France",5,0,0
+8,"France - France",5,0,0
+9,"France - France",6,1,0
+10,"France - France",6,0,0
+11,"France - France",6,0,0
+12,"France - France",6,0,0
+13,"France - France",6,0,0
+14,"France - France",6,0,0
+15,"France - France",6,0,0
+16,"France - France",11,5,1.6094379124341
+17,"France - France",11,0,0
+18,"France - France",11,0,0
+19,"France - France",11,0,0
+20,"France - France",11,0,0
+21,"France - France",11,0,0
+22,"France - France",11,0,0
+23,"France - France",12,1,0
+24,"France - France",12,0,0
+25,"France - France",12,0,0
+26,"France - France",12,0,0
+27,"France - France",12,0,0
+28,"France - France",12,0,0
+29,"France - France",12,0,0
+30,"France - France",12,0,0
+31,"France - France",12,0,0
+32,"France - France",12,0,0
+33,"France - France",14,2,0.693147180559945
+34,"France - France",18,4,1.38629436111989
+35,"France - France",38,20,2.99573227355399
+36,"France - France",57,19,2.94443897916644
+37,"France - France",100,43,3.76120011569356
+38,"France - France",130,30,3.40119738166216
+39,"France - France",191,61,4.11087386417331
+40,"France - France",204,13,2.56494935746154
+41,"France - France",285,81,4.39444915467244
+42,"France - France",377,92,4.52178857704904
+43,"France - France",653,276,5.62040086571715
+44,"France - France",949,296,5.69035945432406
+45,"France - France",1126,177,5.17614973257383
+46,"France - France",1209,83,4.4188406077966
+47,"France - France",1784,575,6.35437004079735
+48,"France - France",2281,497,6.20859002609663
+49,"France - France",2281,0,0
+50,"France - France",3661,1380,7.22983877815125
+51,"France - France",4469,808,6.69456205852109
+52,"France - France",4499,30,3.40119738166216
+53,"France - France",6633,2134,7.6657534318617
+54,"France - France",7652,1019,6.92657703322272
+55,"France - France",9043,1391,7.23777819192344
+56,"France - France",10871,1828,7.5109777520141
+57,"France - France",12612,1741,7.46221493976819
+1,"Spain - Spain",1,0,0
+2,"Spain - Spain",1,0,0
+3,"Spain - Spain",1,0,0
+4,"Spain - Spain",1,0,0
+5,"Spain - Spain",1,0,0
+6,"Spain - Spain",1,0,0
+7,"Spain - Spain",1,0,0
+8,"Spain - Spain",1,0,0
+9,"Spain - Spain",2,1,0
+10,"Spain - Spain",2,0,0
+11,"Spain - Spain",2,0,0
+12,"Spain - Spain",2,0,0
+13,"Spain - Spain",2,0,0
+14,"Spain - Spain",2,0,0
+15,"Spain - Spain",2,0,0
+16,"Spain - Spain",2,0,0
+17,"Spain - Spain",2,0,0
+18,"Spain - Spain",2,0,0
+19,"Spain - Spain",2,0,0
+20,"Spain - Spain",2,0,0
+21,"Spain - Spain",2,0,0
+22,"Spain - Spain",2,0,0
+23,"Spain - Spain",2,0,0
+24,"Spain - Spain",2,0,0
+25,"Spain - Spain",6,4,1.38629436111989
+26,"Spain - Spain",13,7,1.94591014905531
+27,"Spain - Spain",15,2,0.693147180559945
+28,"Spain - Spain",32,17,2.83321334405622
+29,"Spain - Spain",45,13,2.56494935746154
+30,"Spain - Spain",84,39,3.66356164612965
+31,"Spain - Spain",120,36,3.58351893845611
+32,"Spain - Spain",165,45,3.80666248977032
+33,"Spain - Spain",222,57,4.04305126783455
+34,"Spain - Spain",259,37,3.61091791264422
+35,"Spain - Spain",400,141,4.94875989037817
+36,"Spain - Spain",500,100,4.60517018598809
+37,"Spain - Spain",673,173,5.15329159449778
+38,"Spain - Spain",1073,400,5.99146454710798
+39,"Spain - Spain",1695,622,6.43294009273918
+40,"Spain - Spain",2277,582,6.36647044773144
+41,"Spain - Spain",2277,0,0
+42,"Spain - Spain",5232,2955,7.9912539298402
+43,"Spain - Spain",6391,1159,7.05531284333975
+44,"Spain - Spain",7798,1407,7.24921505711439
+45,"Spain - Spain",9942,2144,7.67042852219069
+46,"Spain - Spain",11748,1806,7.49886973397693
+47,"Spain - Spain",13910,2162,7.67878899819915
+48,"Spain - Spain",17963,4053,8.30721262662831
+49,"Spain - Spain",20410,2447,7.80261806344267
+1,"China - Hubei",444,0,0
+2,"China - Hubei",444,0,0
+3,"China - Hubei",549,105,4.65396035015752
+4,"China - Hubei",761,212,5.35658627467201
+5,"China - Hubei",1058,297,5.6937321388027
+6,"China - Hubei",1423,365,5.89989735358249
+7,"China - Hubei",3554,2131,7.66434663209862
+8,"China - Hubei",3554,0,0
+9,"China - Hubei",4903,1349,7.20711885620776
+10,"China - Hubei",5806,903,6.80572255341699
+11,"China - Hubei",7153,1347,7.20563517641036
+12,"China - Hubei",11177,4024,8.30003171177957
+13,"China - Hubei",13522,2345,7.76004068088038
+14,"China - Hubei",16678,3156,8.05706068196577
+15,"China - Hubei",19665,2987,8.00202481821611
+16,"China - Hubei",22112,2447,7.80261806344267
+17,"China - Hubei",24953,2841,7.95191138185419
+18,"China - Hubei",27100,2147,7.67182679787878
+19,"China - Hubei",29631,2531,7.83636976054512
+20,"China - Hubei",31728,2097,7.64826303090192
+21,"China - Hubei",33366,1638,7.40123126441302
+22,"China - Hubei",33366,0,0
+23,"China - Hubei",48206,14840,9.60508151672137
+24,"China - Hubei",54406,6200,8.73230457103318
+25,"China - Hubei",56249,1843,7.51914995766982
+26,"China - Hubei",58182,1933,7.56682847920833
+27,"China - Hubei",59989,1807,7.49942329059223
+28,"China - Hubei",61682,1693,7.43425738213314
+29,"China - Hubei",62031,349,5.85507192220243
+30,"China - Hubei",62442,411,6.01859321449623
+31,"China - Hubei",62662,220,5.39362754635236
+32,"China - Hubei",64084,1422,7.25981961036319
+33,"China - Hubei",64084,0,0
+34,"China - Hubei",64287,203,5.31320597904179
+35,"China - Hubei",64786,499,6.21260609575152
+36,"China - Hubei",65187,401,5.99396142730657
+37,"China - Hubei",65596,409,6.0137151560428
+38,"China - Hubei",65914,318,5.76205138278018
+39,"China - Hubei",66337,423,6.04737217904628
+40,"China - Hubei",66907,570,6.3456363608286
+41,"China - Hubei",67103,196,5.27811465923052
+42,"China - Hubei",67217,114,4.7361984483945
+43,"China - Hubei",67332,115,4.74493212836325
+44,"China - Hubei",67466,134,4.89783979995091
+45,"China - Hubei",67592,126,4.83628190695148
+46,"China - Hubei",67666,74,4.30406509320417
+47,"China - Hubei",67707,41,3.71357206670431
+48,"China - Hubei",67743,36,3.58351893845611
+49,"China - Hubei",67760,17,2.83321334405622
+50,"China - Hubei",67773,13,2.56494935746154
+51,"China - Hubei",67781,8,2.07944154167984
+52,"China - Hubei",67786,5,1.6094379124341
+53,"China - Hubei",67790,4,1.38629436111989
+54,"China - Hubei",67794,4,1.38629436111989
+55,"China - Hubei",67798,4,1.38629436111989
+56,"China - Hubei",67799,1,0
+57,"China - Hubei",67800,1,0
+58,"China - Hubei",67800,0,0
+59,"China - Hubei",67800,0,0
+1,"Taiwan* - Taiwan*",1,0,0
+2,"Taiwan* - Taiwan*",1,0,0
+3,"Taiwan* - Taiwan*",3,2,0.693147180559945
+4,"Taiwan* - Taiwan*",3,0,0
+5,"Taiwan* - Taiwan*",4,1,0
+6,"Taiwan* - Taiwan*",5,1,0
+7,"Taiwan* - Taiwan*",8,3,1.09861228866811
+8,"Taiwan* - Taiwan*",8,0,0
+9,"Taiwan* - Taiwan*",9,1,0
+10,"Taiwan* - Taiwan*",10,1,0
+11,"Taiwan* - Taiwan*",10,0,0
+12,"Taiwan* - Taiwan*",10,0,0
+13,"Taiwan* - Taiwan*",10,0,0
+14,"Taiwan* - Taiwan*",11,1,0
+15,"Taiwan* - Taiwan*",11,0,0
+16,"Taiwan* - Taiwan*",16,5,1.6094379124341
+17,"Taiwan* - Taiwan*",16,0,0
+18,"Taiwan* - Taiwan*",17,1,0
+19,"Taiwan* - Taiwan*",18,1,0
+20,"Taiwan* - Taiwan*",18,0,0
+21,"Taiwan* - Taiwan*",18,0,0
+22,"Taiwan* - Taiwan*",18,0,0
+23,"Taiwan* - Taiwan*",18,0,0
+24,"Taiwan* - Taiwan*",18,0,0
+25,"Taiwan* - Taiwan*",18,0,0
+26,"Taiwan* - Taiwan*",20,2,0.693147180559945
+27,"Taiwan* - Taiwan*",22,2,0.693147180559945
+28,"Taiwan* - Taiwan*",22,0,0
+29,"Taiwan* - Taiwan*",23,1,0
+30,"Taiwan* - Taiwan*",24,1,0
+31,"Taiwan* - Taiwan*",26,2,0.693147180559945
+32,"Taiwan* - Taiwan*",26,0,0
+33,"Taiwan* - Taiwan*",28,2,0.693147180559945
+34,"Taiwan* - Taiwan*",30,2,0.693147180559945
+35,"Taiwan* - Taiwan*",31,1,0
+36,"Taiwan* - Taiwan*",32,1,0
+37,"Taiwan* - Taiwan*",32,0,0
+38,"Taiwan* - Taiwan*",34,2,0.693147180559945
+39,"Taiwan* - Taiwan*",39,5,1.6094379124341
+40,"Taiwan* - Taiwan*",40,1,0
+41,"Taiwan* - Taiwan*",41,1,0
+42,"Taiwan* - Taiwan*",42,1,0
+43,"Taiwan* - Taiwan*",42,0,0
+44,"Taiwan* - Taiwan*",44,2,0.693147180559945
+45,"Taiwan* - Taiwan*",45,1,0
+46,"Taiwan* - Taiwan*",45,0,0
+47,"Taiwan* - Taiwan*",45,0,0
+48,"Taiwan* - Taiwan*",45,0,0
+49,"Taiwan* - Taiwan*",47,2,0.693147180559945
+50,"Taiwan* - Taiwan*",48,1,0
+51,"Taiwan* - Taiwan*",49,1,0
+52,"Taiwan* - Taiwan*",50,1,0
+53,"Taiwan* - Taiwan*",53,3,1.09861228866811
+54,"Taiwan* - Taiwan*",59,6,1.79175946922805
+55,"Taiwan* - Taiwan*",67,8,2.07944154167984
+56,"Taiwan* - Taiwan*",77,10,2.30258509299405
+57,"Taiwan* - Taiwan*",100,23,3.13549421592915
+58,"Taiwan* - Taiwan*",108,8,2.07944154167984
+59,"Taiwan* - Taiwan*",135,27,3.29583686600433
+1,"Korea, South - Korea, South",1,0,0
+2,"Korea, South - Korea, South",1,0,0
+3,"Korea, South - Korea, South",2,1,0
+4,"Korea, South - Korea, South",2,0,0
+5,"Korea, South - Korea, South",3,1,0
+6,"Korea, South - Korea, South",4,1,0
+7,"Korea, South - Korea, South",4,0,0
+8,"Korea, South - Korea, South",4,0,0
+9,"Korea, South - Korea, South",4,0,0
+10,"Korea, South - Korea, South",11,7,1.94591014905531
+11,"Korea, South - Korea, South",12,1,0
+12,"Korea, South - Korea, South",15,3,1.09861228866811
+13,"Korea, South - Korea, South",15,0,0
+14,"Korea, South - Korea, South",16,1,0
+15,"Korea, South - Korea, South",19,3,1.09861228866811
+16,"Korea, South - Korea, South",23,4,1.38629436111989
+17,"Korea, South - Korea, South",24,1,0
+18,"Korea, South - Korea, South",24,0,0
+19,"Korea, South - Korea, South",25,1,0
+20,"Korea, South - Korea, South",27,2,0.693147180559945
+21,"Korea, South - Korea, South",28,1,0
+22,"Korea, South - Korea, South",28,0,0
+23,"Korea, South - Korea, South",28,0,0
+24,"Korea, South - Korea, South",28,0,0
+25,"Korea, South - Korea, South",28,0,0
+26,"Korea, South - Korea, South",29,1,0
+27,"Korea, South - Korea, South",30,1,0
+28,"Korea, South - Korea, South",31,1,0
+29,"Korea, South - Korea, South",31,0,0
+30,"Korea, South - Korea, South",104,73,4.29045944114839
+31,"Korea, South - Korea, South",204,100,4.60517018598809
+32,"Korea, South - Korea, South",433,229,5.43372200355424
+33,"Korea, South - Korea, South",602,169,5.12989871492307
+34,"Korea, South - Korea, South",833,231,5.44241771052179
+35,"Korea, South - Korea, South",977,144,4.969813299576
+36,"Korea, South - Korea, South",1261,284,5.64897423816121
+37,"Korea, South - Korea, South",1766,505,6.22455842927536
+38,"Korea, South - Korea, South",2337,571,6.34738920965601
+39,"Korea, South - Korea, South",3150,813,6.70073110954781
+40,"Korea, South - Korea, South",3736,586,6.37331978957701
+41,"Korea, South - Korea, South",4335,599,6.39526159811545
+42,"Korea, South - Korea, South",5186,851,6.74641212857337
+43,"Korea, South - Korea, South",5621,435,6.07534603108868
+44,"Korea, South - Korea, South",6088,467,6.1463292576689
+45,"Korea, South - Korea, South",6593,505,6.22455842927536
+46,"Korea, South - Korea, South",7041,448,6.10479323241498
+47,"Korea, South - Korea, South",7314,273,5.60947179518496
+48,"Korea, South - Korea, South",7478,164,5.0998664278242
+49,"Korea, South - Korea, South",7513,35,3.55534806148941
+50,"Korea, South - Korea, South",7755,242,5.48893772615669
+51,"Korea, South - Korea, South",7869,114,4.7361984483945
+52,"Korea, South - Korea, South",7979,110,4.70048036579242
+53,"Korea, South - Korea, South",8086,107,4.67282883446191
+54,"Korea, South - Korea, South",8162,76,4.33073334028633
+55,"Korea, South - Korea, South",8236,74,4.30406509320417
+56,"Korea, South - Korea, South",8320,84,4.43081679884331
+57,"Korea, South - Korea, South",8413,93,4.53259949315326
+58,"Korea, South - Korea, South",8565,152,5.02388052084628
+59,"Korea, South - Korea, South",8652,87,4.46590811865458

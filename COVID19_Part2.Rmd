@@ -1,0 +1,90 @@
+---
+title: "COVID-19 Analysis Part II"
+output: html_notebook
+author: "Miles R. Porter"
+date: March 22, 2020
+---
+
+# Introduction
+
+In my earlier R notebook on COVID-19, I explored some numbers from different countries around the world.  The data for that notebook was taken from the Kaggle challenge available at:  https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+
+In this notebook, I will explore the numbers a little further and attempt to do some modeling.  
+
+In his 1987 book, Empirical Model-Building and Response Surfaces, statistician George Box wrote "Essentially, all models are wrong, but some are useful."  (Empirical Model-Building and Response Surfaces. Box, George. Draper, Norman. page 424).  I encourage anyone reading this post to please keep that in mind.  I am going to attempt some modeling based data.  Simply put, the models will be wrong.  It is my hope that they will be, in some small way, useful to someone.
+
+# Reading in the Data
+
+The code below reads in the data from the previous post.  This data has a list of countries, and the count of new diagnosed COVID-19 cases per day.  The data has been formatted so that the counts for each country are listed in order.
+
+```{r}
+rm(list=ls())
+all_locations <- read.csv("all_locations.csv", header=T)
+head(all_locations)
+```
+
+We can graph the data as follows.  Note:  The values here are shown in logarithmic scale.
+
+```{r}
+library(ggplot2)
+p <- ggplot(all_locations, aes(x=sequence, y=logscale, colour=location,  linetype=location)) +
+  geom_line() + ggtitle("COVID-19 New Cases Natural Log")+xlab("Days After First Case")+ylab("New Cases ln(x)")
+p
+```
+
+If we take just the data for China, which has had the virus the longest, and is now starting to show signs that new infections of stopped (at least for now), we get the following graph:
+
+```{r}
+china_df <- subset(all_locations, all_locations$location=="China - Hubei")
+p <- ggplot(china_df, aes(x=sequence, y=logscale, colour=location,  linetype=location)) +
+  geom_line() + ggtitle("COVID-19 New Cases Natural Log")+xlab("Days After First Case")+ylab("New Cases ln(x)")
+p
+```
+
+One thing to note here is that there are several outliers in this graph.  Those are days where the count of new viruses was 0.  Those happened on the following days:
+
+```{r}
+subset(china_df, china_df$delta==0)
+```
+On days 8, 22, and 33, the numbers seem to indicate no new viruses.  This is extremely unlikely.  In order to adjust for these anomolies, I am going to impute new data for these outliers.  
+
+```{r}
+compute_delta <- function(df, colname){
+  delta = data.frame(as.integer())
+  delta <- rbind(delta,delta=0)
+  c = which(names(df)==colname)
+  for (r in seq(2,nrow(df))){
+      delta <- rbind(delta, delta=(df[r,c] - df[r-1,c]))
+  }
+  names(delta) <- c('delta')
+  df$delta <- delta$delta
+  return(df)
+}
+
+
+china_df[8,3] <- 4229
+china_df[22,3] <- as.integer(33366+((48206-33366)/2))
+china_df[33,3] <- as.integer(64084+((64287-64084)/2))
+china_df <- compute_delta(china_df, 'count')
+china_df$logscale <- log(china_df$delta)
+china_df[china_df<0] <-0
+
+
+p <- ggplot(china_df, aes(x=sequence, y=logscale, colour=location,  linetype=location)) +
+  geom_line() + ggtitle("COVID-19 New Cases Natural Log")+xlab("Days After First Case")+ylab("New Cases ln(x)")
+p
+```
+
+
+Now, with the data smoothed, we can attempt to fit a model to this data.  There are a number of different ways to proceed.  
+
+```{r}
+reg = glm(logscale~sequence, data=china_df, family="quasipoisson")
+plot(reg)
+dat = data.frame(as.double())
+names(dat)<-c('sequence')
+newdays <- seq(1,nrow(china_df))
+dat$sequence<-predict(reg, new_data=newdays)
+dat
+
+```

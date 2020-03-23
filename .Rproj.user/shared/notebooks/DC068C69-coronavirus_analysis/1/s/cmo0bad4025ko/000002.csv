@@ -1,4 +1,0 @@
-"0","p <- ggplot(all_locations, aes(x=sequence, y=delta, colour=location, linetype=location)) +"
-"0","  geom_line() +"
-"0","  ggtitle(""COVID19 New Cases"")+xlab(""Days After First Case"")+ylab(""New Cases"")"
-"0","p"

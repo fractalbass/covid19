@@ -5,13 +5,13 @@ date: March 20, 2020
 output: html_notebook
 ---
 
-*Updated March 21, 2020*
+*Updated March 23, 2020*
 
 # Introduction
 
 I have been asked by several co-workers and others if I have looked at the data for COVID-19.  This document is an attempt to look at that data at a fairly high level.
 
-The data for this writeup was obtained from the Kaggle challenge site:  https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset
+The data for this writeup was obtained from the Kaggle challenge site:  [https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset](https://www.kaggle.com/sudalairajkumar/novel-corona-virus-2019-dataset)
 
 The data on the kaggle challenge is update almost daily.  The here was last updated at 3:00am (GMT-5) March 20, 2019
 
@@ -246,6 +246,12 @@ p <- ggplot(all_locations, aes(x=sequence, y=logscale, colour=location,  linetyp
   geom_line() + ggtitle("COVID-19 New Cases Natural Log")+xlab("Days After First Case")+ylab("New Cases ln(x)")
 p
 
+```
+
+Now saving the data for part 2.
+
+```{r}
+write.csv(all_locations, "all_locations.csv", row.names = FALSE)
 ```
 
 And now we see the issue.  Minnesota is taking off at a pretty steep clip, particularly in regards to Taiwan.  We are tracking slightly behind Hubei and Iran, but ahead of even France. Keep in mind that these are new cases each day.
