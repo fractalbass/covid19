@@ -1,1 +1,2 @@
-wget https://storage.googleapis.com/kaggle-data-sets/494724/1024749/bundle/archive.zip?GoogleAccessId=web-data@kaggle-161607.iam.gserviceaccount.com&Expires=1585064734&Signature=PDjoLZQ1seUBqx2OiV4TdYWrhGwRq9wWs9SZB9YKcRGgZQjJZN0LC9CqWWnC6ujFwyRHuJ0qAsjZDWdhaoroBEv8Eq6SToHJ4cOUSXQ0guTotJbkcWKhN6P72tliMmHiWII5JTu3yOSYcOTVclUGlpHNEpQgYk36CVHq8y2jdvmdE%2BJMylKckemb538rM%2B836BUIukbR7pb4HEFs5fsfMzG2J%2FcJNfuDlTQnWEy06yKpWP3w6Z0Q%2ByERGLl97knJSXuoL6PzncYYtHLD81n8D%2BtLQmnVvperfegrBA234XhH4q1qFTCh3X1aI0q4PAfva4sLnaAZp39TeXVuvA3nKA%3D%3D&response-content-disposition=attachment%3B+filename%3Dnovel-corona-virus-2019-dataset.zip
+mv ~/Downloads/novel-corona-virus-2019-dataset.zip .
+unzip -o novel-corona-virus-2019-dataset.zip 
