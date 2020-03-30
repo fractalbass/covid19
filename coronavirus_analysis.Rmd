@@ -5,7 +5,7 @@ date: March 20, 2020
 output: html_notebook
 ---
 
-*Updated March 29, 2020*
+*Updated March 30, 2020*
 
 # Introduction
 
@@ -186,14 +186,14 @@ get_location <- function(df_full, country, province) {
 
 # Graphs
 
-We will start with a set of places:  Minnesota, Iran, France, Spain, and Hubei, China, Taiwan and South Korea.  This code creates a single dataframe that we can explore with various transforms of the data.
+We will start with a set of places:  United States, Iran, France, Spain, and Hubei, China, Taiwan and South Korea.  This code creates a single dataframe that we can explore with various transforms of the data.
 
 ```{r}
 
 all_locations = data.frame(as.integer(), as.character(), as.integer(), as.integer())
 names(all_locations) <- c("sequence", "location","count", "delta")
 
-minnesota <- get_location(df_confirmed, "US", "US")
+us <- get_location(df_confirmed, "US", "US")
 iran <- get_location(df_confirmed, "Iran","Iran")
 italy <- get_location(df_confirmed, "Italy", "Italy")
 france <- get_location(df_confirmed, "France","France")
@@ -202,7 +202,7 @@ china <- get_location(df_confirmed, "China","Hubei")
 taiwan <- get_location(df_confirmed, "Taiwan*", "Taiwan*")
 skorea <- get_location(df_confirmed, "Korea, South","Korea, South")
 
-all_locations <- rbind(all_locations, minnesota)
+all_locations <- rbind(all_locations, us)
 all_locations <- rbind(all_locations, iran)
 all_locations <- rbind(all_locations, italy)
 all_locations <- rbind(all_locations, france)
@@ -226,7 +226,7 @@ p
 
 ```
 
-On this graph, we see something interesting.  Minnesota doesn't seem to appear.  Actually, you have to look really really close in the lower left hand corner.  Because Hubei has so many cases, Minnesota just seems to hug the x-axis.
+On this graph, we see something interesting.  several of the countries doesn't seem to appear.  Actually, you have to look really really close.  Due to the scale, several of the lines hug the x-axis.
 
 ## Square Root of Counts
 
@@ -239,7 +239,7 @@ p
 
 ```
 
-Here we see Minnesota just start to appears.  The square root transform is not sufficient to really get a sense of the pattern.  To do that we will move to a log scale.
+Here we see several of the countries just start to appears.  The square root transform is not sufficient to really get a sense of the pattern.  To do that we will move to a log scale.
 
 ## Log Scale
 
@@ -254,13 +254,9 @@ p
 
 ```
 
-Now saving the data for part 2.
-
 ```{r}
 write.csv(all_locations, "all_locations.csv", row.names = FALSE)
 ```
-
-And now we see the issue.  Minnesota is taking off at a pretty steep clip, particularly in regards to Taiwan.  We are tracking slightly behind Hubei and Iran, but ahead of even France. Keep in mind that these are new cases each day.
 
 # A Few Words About the Data
 
