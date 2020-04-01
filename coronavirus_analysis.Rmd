@@ -5,7 +5,7 @@ date: March 20, 2020
 output: html_notebook
 ---
 
-*Updated March 30, 2020*
+*Updated April 1, 2020*
 
 # Introduction
 
@@ -24,7 +24,7 @@ The data is updated almost daily.
 
 The following loads the COVID-19 data.
 
-```{r}
+```{r warning=FALSE}
 rm(list=ls())
 library(ggplot2)
 library(data.table)
