@@ -7,7 +7,7 @@ output:
     df_print: paged
 ---
 
-*Updated April 20, 2020*
+*Updated `r Sys.Date()`*
 
 # Introduction
 
@@ -17,7 +17,7 @@ The data for this writeup is now coming from the Johns Hopkins data set.
 <pre>
 https://github.com/CSSEGISandData/COVID-19
 </pre>
-Note:  RPubs doens't seem to allow URLs.  You will need to copy/pase the url into your browser.
+Note:  RPubs doens't seem to allow URLs.  You will need to copy/paste the url into your browser.
 
 
 The data is updated almost daily.  
@@ -68,6 +68,8 @@ head(df_confirmed)
 We want the data to eventually be in a tibble (tall skinny table) to make it easier to graph.
 
 ```{r}
+library(dplyr)
+library(tidyverse)
 # Rename rows...
 extract_location <- function(df, cname, pname){
   country <- subset(df, df$Country.Region==cname)
@@ -82,6 +84,8 @@ extract_location <- function(df, cname, pname){
   dfct <- dfct[c('sequence','location','count')]
   dfct$count <- as.integer(dfct$count)
   row.names(dfct) <- seq(1,nrow(dfct))
+  
+  dfct <- dfct %>% dplyr::mutate(roll = zoo::rollmean(count, k = 3, fill = NA))
   return(dfct)
 }
 
@@ -169,7 +173,7 @@ compute_delta <- function(df, colname){
   return(df)
 }
 
-test_df <- compute_delta(test_df, 'count')
+test_df <- compute_delta(test_df, 'roll')
 test_df
 ```
   
@@ -193,7 +197,7 @@ We will start with a set of places:  United States, Iran, France, Spain, and Hub
 ```{r}
 
 all_locations = data.frame(as.integer(), as.character(), as.integer(), as.integer())
-names(all_locations) <- c("sequence", "location","count", "delta")
+names(all_locations) <- c("sequence", "location","count", "roll")
 
 us <- get_location(df_confirmed, "US", "US")
 iran <- get_location(df_confirmed, "Iran","Iran")
@@ -221,7 +225,7 @@ Our first graph will be of confirmed case counts in the different areas of inter
 
 ```{r}
 
-p <- ggplot(all_locations, aes(x=sequence, y=delta, colour=location, linetype=location)) +
+p <- ggplot(all_locations, aes(x=sequence, y=roll, colour=location, linetype=location)) +
   geom_line() +
   ggtitle("COVID19 New Cases")+xlab("Days After First Case")+ylab("New Cases")
 p
@@ -235,7 +239,7 @@ On this graph, we see something interesting.  several of the countries doesn't s
 In the next graph, we will plot the square root of the number of new cases for each of the countries.  By doing so, we will be able to more easily see the smaller numbers.
 
 ```{r}
-p <- ggplot(all_locations, aes(x=sequence, y=sqrt(delta), colour=location, linetype=location)) +
+p <- ggplot(all_locations, aes(x=sequence, y=sqrt(roll), colour=location, linetype=location)) +
   geom_line()+ggtitle("COVID-19 New Cases (Sqrt)")+xlab("Days After First Case")+ylab("New Cases sqrt(x)")
 p
 
@@ -248,7 +252,7 @@ Here we see several of the countries just start to appears.  The square root tra
 In the next graph, we transform the number of cases by a natural log.
 
 ```{r}
-all_locations$logscale <- log(all_locations$delta)
+all_locations$logscale <- log(all_locations$roll)
 all_locations[all_locations<0] <-0
 p <- ggplot(all_locations, aes(x=sequence, y=logscale, colour=location,  linetype=location)) +
   geom_line() + ggtitle("COVID-19 New Cases Natural Log")+xlab("Days After First Case")+ylab("New Cases ln(x)")
